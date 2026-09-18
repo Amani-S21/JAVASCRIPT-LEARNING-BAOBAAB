@@ -95,10 +95,10 @@ let age = 42;
 const ville = "Lubumbashi";
 const formation = "Progration Web";
 const entreprise = "Afrix Global";
-let note = 80;
+let not = 80;
 
 console.log(
-  `Je m'appelle ${nom} J'ai ${age} ans j'habite a ${ville} j'ai fait ${formation} et je travailles ${entreprise} j'ai eu ${note}`,
+  `Je m'appelle ${nom} J'ai ${age} ans j'habite a ${ville} j'ai fait ${formation} et je travailles ${entreprise} j'ai eu ${not} de moyenne`,
 );
 console.log(`l'annee pronchaine j'aurais ${age + 1} ans `);
 
@@ -116,3 +116,71 @@ console.log(`l'annee pronchaine j'aurais ${age + 1} ans `);
 // Creer les variables necessaires
 // Calculer la moyenne
 // Afficher la moyenne dans le console
+
+let a = 20;
+let b = 30;
+console.log(`la somme de ${a} + ${b} est : ${a + b}`);
+
+console.log(`la soustraction de ${a} - ${b} est : ${a - b}`);
+
+console.log(`la multiplication de ${a} * ${b} est : ${a * b}`);
+
+console.log(`la division de ${a} / ${b} est : ${a / b}`);
+
+console.log(`le reste de la division de ${a} % ${b} est : ${a % b}`);
+
+console.log(20 % 3);
+
+console.log(5 > 30);
+console.log(5 < 30);
+console.log(50 >= 30);
+console.log(25 <= 30);
+console.log(50 !== 80);
+
+console.log(5 === "5")
+
+// if(condition){
+//   inscriptions
+// }
+
+let age1 = 28;
+
+// if(age1 > 18){
+//   console.log("Vous etes majeur")
+// }
+
+if(age1 > 18){
+  console.log("Vous etes majeur");
+} else 
+{
+  console.log("Vous etes mineur");
+}
+
+let note = 28;
+if(note >= 80){
+  console.log("Excellent");
+} else if (note >= 70){
+  console.log("Tres bien");
+} else if (note <= 60){
+  console.log("Bien");
+} else if (note >= 50){
+  console.log("Passable")
+}else
+  {
+    console.log("Echec");
+  }
+
+let age2 = 40;
+let carte = true;
+if (age2 >= 18 && carte === true){
+  console.log("Vous pouvez voter");
+}
+
+let sexe = "Masculin"
+let connected = true;
+if(sexe === "Masculin" || connected === false){
+  console.log("Acces autorise")
+}
+
+let connexion = !true;
+console.log(!connexion);
