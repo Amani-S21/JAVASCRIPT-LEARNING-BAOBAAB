@@ -90,17 +90,17 @@ btn.addEventListener("click", () => {
 // resultat = a + b;
 // console.log(`Apres reassignation le resulat est ${resultat}`);
 
-const nom = "Josue";
-let age = 42;
-const ville = "Lubumbashi";
-const formation = "Progration Web";
-const entreprise = "Afrix Global";
-let not = 80;
+// const nom = "Josue";
+// let age = 42;
+// const ville = "Lubumbashi";
+// const formation = "Progration Web";
+// const entreprise = "Afrix Global";
+// let not = 80;
 
-console.log(
-  `Je m'appelle ${nom} J'ai ${age} ans j'habite a ${ville} j'ai fait ${formation} et je travailles ${entreprise} j'ai eu ${not} de moyenne`,
-);
-console.log(`l'annee pronchaine j'aurais ${age + 1} ans `);
+// console.log(
+//   `Je m'appelle ${nom} J'ai ${age} ans j'habite a ${ville} j'ai fait ${formation} et je travailles ${entreprise} j'ai eu ${not} de moyenne`,
+// );
+// console.log(`l'annee pronchaine j'aurais ${age + 1} ans `);
 
 
 // EXERCICES
@@ -117,70 +117,147 @@ console.log(`l'annee pronchaine j'aurais ${age + 1} ans `);
 // Calculer la moyenne
 // Afficher la moyenne dans le console
 
-let a = 20;
-let b = 30;
-console.log(`la somme de ${a} + ${b} est : ${a + b}`);
+// let a = 20;
+// let b = 30;
+// console.log(`la somme de ${a} + ${b} est : ${a + b}`);
 
-console.log(`la soustraction de ${a} - ${b} est : ${a - b}`);
+// console.log(`la soustraction de ${a} - ${b} est : ${a - b}`);
 
-console.log(`la multiplication de ${a} * ${b} est : ${a * b}`);
+// console.log(`la multiplication de ${a} * ${b} est : ${a * b}`);
 
-console.log(`la division de ${a} / ${b} est : ${a / b}`);
+// console.log(`la division de ${a} / ${b} est : ${a / b}`);
 
-console.log(`le reste de la division de ${a} % ${b} est : ${a % b}`);
+// console.log(`le reste de la division de ${a} % ${b} est : ${a % b}`);
 
-console.log(20 % 3);
+// console.log(20 % 3);
 
-console.log(5 > 30);
-console.log(5 < 30);
-console.log(50 >= 30);
-console.log(25 <= 30);
-console.log(50 !== 80);
+// console.log(5 > 30);
+// console.log(5 < 30);
+// console.log(50 >= 30);
+// console.log(25 <= 30);
+// console.log(50 !== 80);
 
-console.log(5 === "5")
+// console.log(5 === "5")
 
-// if(condition){
-//   inscriptions
-// }
+// // if(condition){
+// //   inscriptions
+// // }
 
-let age1 = 28;
+// let age1 = 8;
+
+// // if(age1 > 18){
+// //   console.log("Vous etes majeur")
+// // }
 
 // if(age1 > 18){
-//   console.log("Vous etes majeur")
+//   console.log("Vous etes majeur");
+// } else 
+// {
+//   console.log("Vous etes mineur");
 // }
 
-if(age1 > 18){
-  console.log("Vous etes majeur");
-} else 
-{
-  console.log("Vous etes mineur");
-}
+// let note = 28;
+// if(note >= 80){
+//   console.log("Excellent");
+// } else if (note >= 70){
+//   console.log("Tres bien");
+// } else if (note >= 60){
+//   console.log("Bien");
+// } else if (note >= 50){
+//   console.log("Passable")
+// }else
+//   {
+//     console.log("Echec");
+//   }
 
-let note = 28;
-if(note >= 80){
-  console.log("Excellent");
-} else if (note >= 70){
-  console.log("Tres bien");
-} else if (note <= 60){
-  console.log("Bien");
-} else if (note >= 50){
-  console.log("Passable")
-}else
-  {
-    console.log("Echec");
+// let age2 = 40;
+// let carte = true;
+// if (age2 >= 18 && carte === true){
+//   console.log("Vous pouvez voter");
+// }
+
+// let sexe = "Masculin"
+// let connected = true;
+// if(sexe === "Masculin" || connected === false){
+//   console.log("Acces autorise")
+// }
+
+// let connexion = !true;
+// console.log(!connexion);
+
+// let age3 = -16;
+// if(age3 >= 18){
+//   console.log("Vous etes majeur");
+// }
+// else{
+//   console.log("Vous etes mineur");
+// }
+
+// const nomStudent = "JOSUE";
+
+// const noteMath = 78;
+// const noteInfo = 70;
+// const noteAnglais = 60;
+// const notePhysique = 52;
+// const noteHistoire = 29;
+// const noteGeographie = 45;
+
+
+// const nom = "DEO";
+// const age = 9;
+// const abonnement = true;
+// creer un programme qui doit donner au user l'acces et 
+// ca doit donner l'acces au user qui a au moins 18 ans et 
+// a un abonnement valide
+
+
+// LES BOUCLES
+// Def : une boucle est une structure de controle qui permet de repeter un bloc d'instruction tant 
+// qu'une condition est vraie
+// ou une boucle permet de repeter automatiquement une ou plusieurs instructions tant qu'une
+// condition est respectee
+
+// console.log("Bonjour je suis Guy");
+// console.log("Bonjour je suis Guy");
+// console.log("Bonjour je suis Guy");
+// console.log("Bonjour je suis Guy");
+// console.log("Bonjour je suis Guy");
+// console.log("Bonjour je suis Guy");
+// console.log("Bonjour je suis Guy");
+// console.log("Bonjour je suis Guy");
+// console.log("Bonjour je suis Guy");
+// console.log("Bonjour je suis Guy");
+
+
+// for (let i = 0; i <= 10; i++){
+//   console.log("Bonjour je suis Guy" + i);
+// }
+
+// BOUCLE FOR
+// for(initialisation; condition; incrementation){
+//   // instruction(s) a repeter
+// }
+
+// for (let i = 1; i <= 5; i++){
+//   console.log(i);
+// }
+
+// for (let i = 30; i >= 1; i--){
+//   console.log(i);
+// }
+
+// for (let i = 0; i <= 75; i++){
+//   if (i % 2 !== 0){
+//     console.log(i);
+//   }
+// }
+
+// for (let i = 1; i<= 12; i++){
+//   console.log(`5 x ${i} = ${5*i}`)
+// }
+
+for (let i = 1; i <= 3; i++){
+  for (let j = 1; j <= 3; j++){
+    console.log(`i=${i}, j=${j}`)
   }
-
-let age2 = 40;
-let carte = true;
-if (age2 >= 18 && carte === true){
-  console.log("Vous pouvez voter");
 }
-
-let sexe = "Masculin"
-let connected = true;
-if(sexe === "Masculin" || connected === false){
-  console.log("Acces autorise")
-}
-
-let connexion = !true;
-console.log(!connexion);
