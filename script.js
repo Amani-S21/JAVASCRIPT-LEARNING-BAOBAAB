@@ -256,8 +256,66 @@ btn.addEventListener("click", () => {
 //   console.log(`5 x ${i} = ${5*i}`)
 // }
 
-for (let i = 1; i <= 3; i++){
-  for (let j = 1; j <= 3; j++){
-    console.log(`i=${i}, j=${j}`)
-  }
+// for (let i = 1; i <= 3; i++){
+//   for (let j = 1; j <= 3; j++){
+//     console.log(`i=${i}, j=${j}`)
+//   }
+// }
+
+//BOUCLE WHILE
+// while(condition){
+//   inscription
+// }
+
+// let i = 10;
+// while (i <= 5){
+//   console.log(i)
+//   i++
+// }
+
+// DO ....... WHILE
+// let i = 1;
+// do{
+//   console.log(i);
+//   i++;
+// } while(i<=5);
+
+// let i = 10;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 5);
+
+// for (let i = 1; i <= 10; i++){
+
+//   if(i === 5){
+//     break
+//   }
+//   console.log(i)
+// }
+
+// for (let i = 1; i <= 5; i++){
+//   if(i === 3){
+//     continue;
+//   }
+//   console.log(i)
+// }
+
+// const nombre = 7
+
+// ex1 : ecrivez un programme qui affiche le nombre de 1 a 30 mais 
+// uniquement les nombres divisible par 3
+
+// ex2 : calculer la somme des nombres 1 a 10
+
+let somme = 0;
+for (let i = 1; i<= 5; i++){
+  somme = somme + i;
 }
+console.log(somme);
+
+// i = 1 => somme 1
+// i = 2 => somme 3
+// i = 3 => somme 6
+// i = 4 => somme 10
+// i = 5 => somme 15
