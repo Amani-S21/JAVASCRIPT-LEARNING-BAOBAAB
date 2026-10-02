@@ -102,7 +102,6 @@ btn.addEventListener("click", () => {
 // );
 // console.log(`l'annee pronchaine j'aurais ${age + 1} ans `);
 
-
 // EXERCICES
 // Un etudiant a obtenu :
 // Math = 78
@@ -112,7 +111,7 @@ btn.addEventListener("click", () => {
 // Histoire = 29
 // Geogrphie = 45;
 
-// TD : 
+// TD :
 // Creer les variables necessaires
 // Calculer la moyenne
 // Afficher la moyenne dans le console
@@ -151,7 +150,7 @@ btn.addEventListener("click", () => {
 
 // if(age1 > 18){
 //   console.log("Vous etes majeur");
-// } else 
+// } else
 // {
 //   console.log("Vous etes mineur");
 // }
@@ -202,17 +201,15 @@ btn.addEventListener("click", () => {
 // const noteHistoire = 29;
 // const noteGeographie = 45;
 
-
 // const nom = "DEO";
 // const age = 9;
 // const abonnement = true;
-// creer un programme qui doit donner au user l'acces et 
-// ca doit donner l'acces au user qui a au moins 18 ans et 
+// creer un programme qui doit donner au user l'acces et
+// ca doit donner l'acces au user qui a au moins 18 ans et
 // a un abonnement valide
 
-
 // LES BOUCLES
-// Def : une boucle est une structure de controle qui permet de repeter un bloc d'instruction tant 
+// Def : une boucle est une structure de controle qui permet de repeter un bloc d'instruction tant
 // qu'une condition est vraie
 // ou une boucle permet de repeter automatiquement une ou plusieurs instructions tant qu'une
 // condition est respectee
@@ -227,7 +224,6 @@ btn.addEventListener("click", () => {
 // console.log("Bonjour je suis Guy");
 // console.log("Bonjour je suis Guy");
 // console.log("Bonjour je suis Guy");
-
 
 // for (let i = 0; i <= 10; i++){
 //   console.log("Bonjour je suis Guy" + i);
@@ -303,19 +299,128 @@ btn.addEventListener("click", () => {
 
 // const nombre = 7
 
-// ex1 : ecrivez un programme qui affiche le nombre de 1 a 30 mais 
+// ex1 : ecrivez un programme qui affiche le nombre de 1 a 30 mais
 // uniquement les nombres divisible par 3
 
 // ex2 : calculer la somme des nombres 1 a 10
 
-let somme = 0;
-for (let i = 1; i<= 5; i++){
-  somme = somme + i;
-}
-console.log(somme);
+// let somme = 0;
+// for (let i = 1; i<= 5; i++){
+//   somme = somme + i;
+// }
+// console.log(somme);
 
 // i = 1 => somme 1
 // i = 2 => somme 3
 // i = 3 => somme 6
 // i = 4 => somme 10
 // i = 5 => somme 15
+
+//LES FONCTIONS
+// Une fonction est un bloc de code qui peut etre reutilise plusieurs fois dans un programme enfin
+// d'eviter de repeeter le meme code plusieurs fois
+
+// syntaxe d'une fonction
+// function nomDeLaFonction(){
+//   // les instructions
+// }
+
+// function saluer(){
+//   console.log("Bonjour, comment allez-vous ?");
+// }
+
+// saluer();
+// saluer();
+// saluer();
+// saluer();
+// saluer();
+
+function saluer(nom, age) {
+  console.log(`Bonjour ${nom}, vous avez ${age} ans`);
+}
+
+saluer("Deo", 15);
+saluer("Josue", 20);
+saluer("Guy", 17);
+saluer("Julien", 24);
+
+function addition(a, b) {
+  return a + b;
+}
+const resultat = addition(10, 5);
+// console.log(`Le resultat est : ${resultat}`);
+console.log(resultat * 3);
+
+function afficherNombre(limite) {
+  for (let i = 0; i <= limite; i++) {
+    console.log(i);
+  }
+}
+afficherNombre(2);
+// afficherNombre(5);
+// afficherNombre(10);
+
+function saluerValuer(nom = "Visiteur") {
+  console.log(`Bonjour ${nom}`);
+}
+
+saluerValuer("Josue");
+saluerValuer();
+
+function doubler(nombre) {
+  return nombre * 2;
+}
+
+function obtenirNom() {
+  return "Josue";
+}
+
+// const additionner = function(a, b){
+//   return a + b;
+// }
+
+// console.log(additionner(20, 15));
+
+// const additionner = (a, b) => {
+//   return a + b;
+// };
+
+// console.log(additionner(20, 15));
+
+const add = (a, b) => a + b;
+console.log(add(10, 5))
+
+
+
+function addNumbers(a, b){
+  return a + b;
+}
+function soustractNumbers(a, b){
+  return a - b;
+}
+function multiplyNumbers(a, b){
+  return a * b;
+}
+function divideNumbers(a, b){
+  if(b === 0){
+  return "Erreur : Division par zéro impossible"; 
+  }
+  return a / b;
+}
+console.log(addNumbers(10, 5));
+console.log(addNumbers(20, 15));
+console.log(soustractNumbers(10, 5));
+console.log(multiplyNumbers(10, 5));
+console.log(divideNumbers(10, 0));
+
+// ex : creer une fonction qui affiche la table de 
+// multiplication d'un nombre taper par le user
+
+function afficherTableMultiplication(nombre){
+  for(let i = 1; i <= 12; i++){
+    console.log(`${nombre} x ${i} = ${nombre * i}`);
+  }
+}
+6
+let num = prompt("Entrez un nombre pour afficher sa table de multiplication :");
+afficherTableMultiplication(num);
