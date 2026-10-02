@@ -421,6 +421,6 @@ function afficherTableMultiplication(nombre){
     console.log(`${nombre} x ${i} = ${nombre * i}`);
   }
 }
-6
+
 let num = prompt("Entrez un nombre pour afficher sa table de multiplication :");
 afficherTableMultiplication(num);
