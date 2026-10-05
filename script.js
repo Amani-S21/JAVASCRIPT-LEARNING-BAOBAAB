@@ -335,92 +335,244 @@ btn.addEventListener("click", () => {
 // saluer();
 // saluer();
 
-function saluer(nom, age) {
-  console.log(`Bonjour ${nom}, vous avez ${age} ans`);
-}
-
-saluer("Deo", 15);
-saluer("Josue", 20);
-saluer("Guy", 17);
-saluer("Julien", 24);
-
-function addition(a, b) {
-  return a + b;
-}
-const resultat = addition(10, 5);
-// console.log(`Le resultat est : ${resultat}`);
-console.log(resultat * 3);
-
-function afficherNombre(limite) {
-  for (let i = 0; i <= limite; i++) {
-    console.log(i);
-  }
-}
-afficherNombre(2);
-// afficherNombre(5);
-// afficherNombre(10);
-
-function saluerValuer(nom = "Visiteur") {
-  console.log(`Bonjour ${nom}`);
-}
-
-saluerValuer("Josue");
-saluerValuer();
-
-function doubler(nombre) {
-  return nombre * 2;
-}
-
-function obtenirNom() {
-  return "Josue";
-}
-
-// const additionner = function(a, b){
-//   return a + b;
+// function saluer(nom, age) {
+//   console.log(`Bonjour ${nom}, vous avez ${age} ans`);
 // }
 
-// console.log(additionner(20, 15));
+// saluer("Deo", 15);
+// saluer("Josue", 20);
+// saluer("Guy", 17);
+// saluer("Julien", 24);
 
-// const additionner = (a, b) => {
+// function addition(a, b) {
 //   return a + b;
-// };
+// }
+// const resultat = addition(10, 5);
+// // console.log(`Le resultat est : ${resultat}`);
+// console.log(resultat * 3);
 
-// console.log(additionner(20, 15));
+// function afficherNombre(limite) {
+//   for (let i = 0; i <= limite; i++) {
+//     console.log(i);
+//   }
+// }
+// afficherNombre(2);
+// // afficherNombre(5);
+// // afficherNombre(10);
 
-const add = (a, b) => a + b;
-console.log(add(10, 5))
+// function saluerValuer(nom = "Visiteur") {
+//   console.log(`Bonjour ${nom}`);
+// }
 
+// saluerValuer("Josue");
+// saluerValuer();
 
+// function doubler(nombre) {
+//   return nombre * 2;
+// }
 
-function addNumbers(a, b){
-  return a + b;
+// function obtenirNom() {
+//   return "Josue";
+// }
+
+// // const additionner = function(a, b){
+// //   return a + b;
+// // }
+
+// // console.log(additionner(20, 15));
+
+// // const additionner = (a, b) => {
+// //   return a + b;
+// // };
+
+// // console.log(additionner(20, 15));
+
+// const add = (a, b) => a + b;
+// console.log(add(10, 5))
+
+// function addNumbers(a, b){
+//   return a + b;
+// }
+// function soustractNumbers(a, b){
+//   return a - b;
+// }
+// function multiplyNumbers(a, b){
+//   return a * b;
+// }
+// function divideNumbers(a, b){
+//   if(b === 0){
+//   return "Erreur : Division par zéro impossible";
+//   }
+//   return a / b;
+// }
+// console.log(addNumbers(10, 5));
+// console.log(addNumbers(20, 15));
+// console.log(soustractNumbers(10, 5));
+// console.log(multiplyNumbers(10, 5));
+// console.log(divideNumbers(10, 0));
+
+// // ex : creer une fonction qui affiche la table de
+// // multiplication d'un nombre taper par le user
+
+// function afficherTableMultiplication(nombre){
+//   for(let i = 1; i <= 12; i++){
+//     console.log(`${nombre} x ${i} = ${nombre * i}`);
+//   }
+// }
+
+// let num = prompt("Entrez un nombre pour afficher sa table de multiplication :");
+// afficherTableMultiplication(num);
+
+// LE TABLEAU
+// const fruits = ["Pomme", "Banane", "Orange", "Mangue", "Fraise"];
+// console.log(fruits);
+// console.log(fruits[1]);
+// fruits[1] = "Avocat";
+// // console.log(fruits[2]);
+// console.log(fruits);
+// console.log(fruits[1]);
+// console.log(fruits.length);
+// // afficher le dernier element du tableau fruits
+// console.log(fruits[fruits.length - 1]);
+// fruits.push("Citron");
+// console.log(fruits);
+// // Ajouter un element au debut du tableau fruits
+// fruits.unshift("papaye");
+// console.log(fruits);
+// // Supprimer le dernier element du tableau fruits
+// fruits.pop();
+// console.log(fruits);
+// // Supprimer le premier element du tableau fruits
+// fruits.shift();
+// console.log(fruits);
+// // verifier si un element existe dans le tableau fruits
+// console.log(fruits.includes("Orange"))
+// console.log(fruits.includes("Ananas"))
+// // afficher l'index d'un element dans le tableau fruits
+// console.log(fruits.indexOf("Adggtr"))
+
+// for (let i = 0; i < fruits.length; i++){
+//   console.log(fruits[i]);
+// }
+
+// const fruits = ["Pomme", "Banane", "Orange", "Mangue", "Fraise"];
+// // fruits.forEach(function(fruit){
+// //   console.log(fruit);
+// // })
+// // fruits.forEach((fruit) => {
+// //   console.log(fruit);
+// // });
+// fruits.forEach(fruits => console.log(fruits))
+
+// const notes = [12, 25, 80];
+// let somme = 0;
+// for (let i = 0; i < notes.length; i++ ){
+//   somme = somme + notes[i]
+// }
+// // console.log(somme)
+// const moyenne = somme / notes.length;
+// console.log(moyenne)
+
+// const nombre = [1, 2, 3, 4, 5]
+// console.log(nombre)
+// const doublon = nombre.map(nombre => nombre * 2);
+// console.log(doublon)
+
+// const nombres = [10, 15, 20, 25, 30]
+// // const grandNumber = nombres.filter(nombres => nombres >= 20);
+// // console.log(grandNumber)
+// const result = nombres.find(nombres => nombres > 18)
+// console.log(result)
+
+// LES OBJECTS
+// const student = {
+//   name: "Deo",
+//   nationality: "Congolese",
+//   age : 12,
+// }
+// console.log(student.name)
+// console.log(student.age)
+// console.log(student.nationality)
+// student.age = 20;
+// console.log(student.age)
+// student.email = "deo@gmail.com";
+// console.log(student.email)
+
+// console.log(student["name"])
+
+// const etud = {
+// nom: "josue",
+// age: 15,
+// notes: [12, 8, 7, 15]
+// }
+// console.log(etud.notes)
+// console.log(etud.notes[2])
+
+const students = [
+  {
+    name: "deo",
+    sexe: "M",
+    age: 20,
+  },
+  {
+    name: "josue",
+    sexe: "M",
+    age: 21,
+  },
+  {
+    name: "Julie",
+    sexe: "M",
+    age: 20,
+  },
+];
+
+console.log(students[1]);
+console.log(students[0].name);
+
+for (let i = 0; i < students.length; i++) {
+  console.log(students[i]);
 }
-function soustractNumbers(a, b){
-  return a - b;
-}
-function multiplyNumbers(a, b){
-  return a * b;
-}
-function divideNumbers(a, b){
-  if(b === 0){
-  return "Erreur : Division par zéro impossible"; 
-  }
-  return a / b;
-}
-console.log(addNumbers(10, 5));
-console.log(addNumbers(20, 15));
-console.log(soustractNumbers(10, 5));
-console.log(multiplyNumbers(10, 5));
-console.log(divideNumbers(10, 0));
 
-// ex : creer une fonction qui affiche la table de 
-// multiplication d'un nombre taper par le user
-
-function afficherTableMultiplication(nombre){
-  for(let i = 1; i <= 12; i++){
-    console.log(`${nombre} x ${i} = ${nombre * i}`);
-  }
+for (let i = 0; i < students.length; i++) {
+  console.log(students[i].name);
 }
 
-let num = prompt("Entrez un nombre pour afficher sa table de multiplication :");
-afficherTableMultiplication(num);
+students.forEach(students => {
+  console.log(students.age)
+})
+
+// EXERCICE
+const etudiants = [
+  {
+    nom: "Clarisse",
+    age: 20,
+    moyenne: 75,
+  },
+  {
+    nom: "Julien",
+    age: 28,
+    moyenne: 59,
+  },
+  {
+    nom: "Christine",
+    age: 15,
+    moyenne: 82,
+  },
+  {
+    nom: "joseph",
+    age: 16,
+    moyenne: 45,
+  },
+  {
+    nom: "Esther",
+    age: 23,
+    moyenne: 65,
+  },
+];
+// td : 
+// aficher tous les etudiants
+// aficher uniquement leurs noms 
+// afficher les etudiants ayant une moyenne >= 50
+// calculez le nombre d'etudiants
+// afficher tous les etudiants mineur 
+// creer ue function qui cherche le nom d'un etudiant dans ce tableau
