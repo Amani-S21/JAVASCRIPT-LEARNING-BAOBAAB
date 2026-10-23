@@ -91,3 +91,26 @@ const touch = document.getElementById("touche")
 saisie.addEventListener("keydown", function(event){
     touche.textContent = "Touche : " + event.key;
 })
+
+const boite = document.getElementById("boite");
+boite.addEventListener("mouseover", function(){
+    boite.style.backgroundColor = "yellow"
+})
+
+boite.addEventListener("mouseout", function(){
+    boite.style.backgroundColor = "lightgray"
+})
+
+const secret = document.getElementById("secret");
+const toggle = document.getElementById("toggle")
+
+toggle.addEventListener("click", function(){
+    if (secret.style.display === "none"){
+        secret.style.display = "block"
+    } else {
+        secret.style.display = "none"
+    }
+})
+
+// tp : creer un formulaire dans lequel l'utilisateur doit saisir son nom, choisir une 
+// formation et clique sur un boutton pour obtenir un messega personnalise

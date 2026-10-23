@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de bienvenue</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="carte">
+        <h1>Bienvenue à la formation</h1>
+
+        <form id="formulaire">
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" required>
+
+            <label for="formation">Votre formation</label>
+            <select id="formation" required>
+                <option value="">Choisir une formation</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="React">React</option>
+            </select>
+
+            <button type="submit">Valider</button>
+        </form>
+
+        <p id="resultat"></p>
+    </main>
+
+</body>
+</html>
