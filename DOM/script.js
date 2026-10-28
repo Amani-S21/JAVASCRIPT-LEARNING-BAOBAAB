@@ -114,3 +114,8 @@ toggle.addEventListener("click", function(){
 
 // tp : creer un formulaire dans lequel l'utilisateur doit saisir son nom, choisir une 
 // formation et clique sur un boutton pour obtenir un messega personnalise
+
+const conteneur = document.get
+const paragraphe = document.createElement("p")
+paragraphe.textContent = "je viens d'etre creer avec le js"
+console.log(paragraphe)
