@@ -78,12 +78,12 @@ formation.addEventListener("change", function() {
 
 const formulaire = document.getElementById("formulaire");
 const nom = document.getElementById("nom");
-const message = document.getElementById("message");
+// const message = document.getElementById("message");
 
-formulaire.addEventListener("submit", function(event){
-    event.preventDefault();
-    message.textContent = "Bienvenue " + nom.value;
-})
+// formulaire.addEventListener("submit", function(event){
+//     event.preventDefault();
+//     message.textContent = "Bienvenue " + nom.value;
+// })
 
 const saisie = document.getElementById("saisie")
 const touch = document.getElementById("touche")
@@ -115,7 +115,23 @@ toggle.addEventListener("click", function(){
 // tp : creer un formulaire dans lequel l'utilisateur doit saisir son nom, choisir une 
 // formation et clique sur un boutton pour obtenir un messega personnalise
 
-const conteneur = document.get
+const conteneur = document.getElementById("conteneur")
+const titre = document.createElement("h2")
+titre.textContent = "Mes competences"
+const competences = document.createElement("p")
+competences.textContent = "HTML, CSS, JAVASCRIPT, REACT"
 const paragraphe = document.createElement("p")
-paragraphe.textContent = "je viens d'etre creer avec le js"
-console.log(paragraphe)
+paragraphe.textContent = "je viens d'etre creer avec le js dynamiquement"
+// console.log(paragraphe)
+conteneur.append(titre, competences, paragraphe)
+
+const liste = document.getElementById("liste")
+const element = document.createElement("li")
+element.textContent = "Nouvelle liste"
+liste.prepend(element)
+
+const message = document.getElementById("message");
+const bouton = document.getElementById("supprimer")
+bouton.addEventListener("click", function(){
+    message.remove();
+})

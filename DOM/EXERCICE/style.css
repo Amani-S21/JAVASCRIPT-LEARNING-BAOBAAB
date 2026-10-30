@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: grey;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.conteneur{
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px yellow;
+}
+
+h1{
+    text-align: center;
+    color: chocolate;
+}
+
+.formualire {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid blue;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: blue;
+    color: white;
+}
+
+#liste-taches {
+    padding: 0;
+    list-style: none;
+}
+
+#liste-taches li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+#message {
+    color: red;
+}
+
+.supprimer {
+    background : red;
+    flex-shrink: 0;
+}
