@@ -88,61 +88,118 @@
 
 // console.log(somme);
 
-const notes = [80, 60, 90, 70];
-const somme = notes.reduce((total, note) => total + note, 0);
-const moyenne = somme / notes.length;
-console.log("La moyenne des notes est : " + moyenne);
+// const notes = [80, 60, 90, 70];
+// const somme = notes.reduce((total, note) => total + note, 0);
+// const moyenne = somme / notes.length;
+// console.log("La moyenne des notes est : " + moyenne);
 
-const ventes = [
-    {produit: "ordinateur", prix:500},
-    {produit: "telephone", prix:300},
-    {produit: "clavier", prix:50}
-]
-const totalVentes = ventes.reduce((total, vente) => {
-    return total + vente.prix;
-}, 0)
+// const ventes = [
+//     {produit: "ordinateur", prix:500},
+//     {produit: "telephone", prix:300},
+//     {produit: "clavier", prix:50}
+// ]
+// const totalVentes = ventes.reduce((total, vente) => {
+//     return total + vente.prix;
+// }, 0)
 
-console.log(totalVentes)
+// console.log(totalVentes)
 
-const notes1 = [35, 42, 75, 60];
-const aUnEchec = notes1.some(note => note < 50)
-console.log(aUnEchec);
+// const notes1 = [35, 42, 75, 60];
+// const aUnEchec = notes1.some(note => note < 50)
+// console.log(aUnEchec);
 
-const notes2 = [70, 80, 65, 20];
-const tousOntreussi = notes2.every(note => note >= 50);
-console.log(tousOntreussi)
+// const notes2 = [70, 80, 65, 20];
+// const tousOntreussi = notes2.every(note => note >= 50);
+// console.log(tousOntreussi)
 
-const apprenants = [
-    {id: 1, nom: "Julien", note:85},
-    {id: 2, nom: "Deo", note:67},
-    {id: 3, nom: "Jean", note:74}
-]
+// const apprenants = [
+//     {id: 1, nom: "Julien", note:85},
+//     {id: 2, nom: "Deo", note:67},
+//     {id: 3, nom: "Jean", note:74}
+// ]
 
-const apprenant = apprenants.find(a => a.nom === "Deo")
+// const apprenant = apprenants.find(a => a.nom === "Deo")
 
-console.log(apprenant)
+// console.log(apprenant)
 
-const position = apprenants.findIndex(a => a.nom === "Dfeo");
-console.log(position)
+// const position = apprenants.findIndex(a => a.nom === "Dfeo");
+// console.log(position)
 
-const nombres = [40, 5, 100, 20];
-// nombres.sort((a, b) => a - b);
-nombres.sort((a, b) => b - a)
-console.log(nombres)
+// const nombres = [40, 5, 100, 20];
+// // nombres.sort((a, b) => a - b);
+// nombres.sort((a, b) => b - a)
+// console.log(nombres)
 
-const apprenants1 = [
-    {nom: "Julien", note: 85},
-    {nom: "Deo", note: 90},
-    {nom: "Pierre", note: 78},
-    {nom: "Marie", note: 42},
-    {nom: "Sophie", note: 35}
-]
+// const apprenants1 = [
+//     {nom: "Julien", note: 85},
+//     {nom: "Deo", note: 90},
+//     {nom: "Pierre", note: 78},
+//     {nom: "Marie", note: 42},
+//     {nom: "Sophie", note: 35}
+// ]
 
-const classement = apprenants1
-    .filter(apprenant => apprenant.note >= 50)
-    .sort((a,b) => b.note - a.note)
-    .map(apprenant => apprenant.nom)
+// const classement = apprenants1
+//     .filter(apprenant => apprenant.note >= 50)
+//     .sort((a,b) => b.note - a.note)
+//     .map(apprenant => apprenant.nom)
 
-console.log(classement)
+// console.log(classement)
 
-// DESTRUCTURATION, SPREAD ET REST
+// // DESTRUCTURATION, SPREAD ET REST
+
+// // // exemple classique
+// // const couleurs = ["rouge", "vert", "blue"]
+// // const premierCouleur = couleurs[0];
+// // const deuxiemeCouleur = couleurs[1]
+
+// // console.log(premierCouleur);
+// // console.log(deuxiemeCouleur)
+
+// const couleurs = ["rouge", "vert", "bleu"]
+
+// // const [premiere, deuxieme, troisieme] = couleurs
+// const [premiere, , troisieme] = couleurs
+
+// console.log(premiere)
+// // console.log(deuxieme)
+// console.log(troisieme)
+
+// const utilisateur = ["Deogratias"]
+
+// const [nom, ville = "Goma"] = utilisateur
+
+// console.log(nom)
+// console.log(ville)
+
+// // exemple classique
+// const apprenant = {
+//     nom: "Deo",
+//     age: 20,
+//     formation: "developpement Web"
+// }
+// const nom = apprenant.nom;
+// const age = apprenant.age;
+
+// avec destructuration
+const apprenant = {
+    nom: "Deo",
+    age: 20,
+    formation: "Developpement Web"
+}
+
+const {nom: nomApprenant, age, formation, ville = "Goma"} = apprenant;
+
+console.log(nomApprenant);
+console.log(age)
+console.log(ville)
+
+function afficherProfil({nom, age}){
+    console.log(`Nom : ${nom}`);
+    console.log(`Age : ${age}`)
+}
+
+const apprenants = {
+    nom: "Julien",
+    age: 22
+}
+console.log(apprenants)
