@@ -1,0 +1,1 @@
+export : permet de rendre disponible une fonction, une variable, une classe ou un autre element depuis un fichier
