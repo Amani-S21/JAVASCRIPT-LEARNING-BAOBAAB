@@ -181,25 +181,78 @@
 // const age = apprenant.age;
 
 // avec destructuration
+// const apprenant = {
+//     nom: "Deo",
+//     age: 20,
+//     formation: "Developpement Web"
+// }
+
+// const {nom: nomApprenant, age, formation, ville = "Goma"} = apprenant;
+
+// console.log(nomApprenant);
+// console.log(age)
+// console.log(ville)
+
+// function afficherProfil({nom, age}){
+//     console.log(`Nom : ${nom}`);
+//     console.log(`Age : ${age}`)
+// }
+
+// const apprenants = {
+//     nom: "Julien",
+//     age: 22
+// }
+
+// afficherProfil(apprenants)
+
+// const nombres = [2,3,4];
+
+// const copieTableau = [...nombres]
+
+// console.log(copieTableau)
+
+// const nouveauTableau = [1, ...nombres, 5];
+// console.log(nouveauTableau)
+
+// const groupeA = ["Deo", "Julien"];
+// const groupB = ["Pierre", "Josue"]
+
+// const tousApprenants = [...groupeA, ...groupB]
+// console.log(tousApprenants)
+
 const apprenant = {
     nom: "Deo",
+    age:25
+}
+
+const apprenModifie = {
+    ...apprenant,
     age: 20,
-    formation: "Developpement Web"
+    ville: "goma"
 }
 
-const {nom: nomApprenant, age, formation, ville = "Goma"} = apprenant;
+console.log(apprenModifie)
 
-console.log(nomApprenant);
-console.log(age)
-console.log(ville)
+// REST OPERATOR
+function additionner(...nombres){
+    return nombres.reduce((total, nombre) => total + nombre, 0)
+}
+console.log(additionner(5, 10))
 
-function afficherProfil({nom, age}){
-    console.log(`Nom : ${nom}`);
-    console.log(`Age : ${age}`)
+const user = {
+    nom: "DEO",
+    age: 25,
+    ville: "goma",
+    formation: "web"
 }
 
-const apprenants = {
-    nom: "Julien",
-    age: 22
-}
-console.log(apprenants)
+const {nom, ...autresInformations} = user;
+
+console.log(nom);
+console.log(autresInformations)
+
+const notes = [15, 18, 12, 14, 16]
+
+const [premiereNotes, ...autresNotes] = notes
+console.log(premiereNotes)
+console.log(autresNotes)
