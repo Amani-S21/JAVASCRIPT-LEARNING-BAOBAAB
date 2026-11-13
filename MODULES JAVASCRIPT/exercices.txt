@@ -1,0 +1,16 @@
+creer un systeme de gestion des produits avec des modules
+avec cette structure
+gestion_produit :
+    index.html
+    js :
+        main.js
+        produits.js
+        calculs.js
+le module produit doit contenir un tableau des produits
+le module calculs doit  ontenir les fonctions suivantes :
+calculerValeurStock() : calculer la valeur totale du stock
+compterProduits() : compter le nombre de produits
+produitsDisponibles() : retourner les produits dont le stock est superieur a 0
+ajouter une fonction qui recherche un produit apartir de son nom
+
+le fichier main.js doit importer ce selements et afficher les resultats dans la page HTML
